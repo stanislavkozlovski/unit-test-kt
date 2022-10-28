@@ -4,6 +4,7 @@
 .classpath
 .idea
 .vscode
+.fleet
 .DS_Store
 bin
 build
