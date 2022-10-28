@@ -5,7 +5,7 @@ package doer.something;
  */
 public class JSomethingDoer {
 
-  private int motivationLevel;
+  private final int motivationLevel;
 
   /**
    * @param motivationLevel a 0-100 integer, denoting how motivated the #{@link JSomethingDoer} is.
