@@ -25,9 +25,12 @@ public class JSomethingDoer {
 
   // package-private for testing
   void maybeDoSecondLittleThing() {
-    if (feelingAmbitious()) {
-      doSecondLittleThing();
+    if (!feelingAmbitious()) {
+      System.out.println("We're not feeling that motivated today it seems.");
+      return;
     }
+
+    doSecondLittleThing();
   }
 
   private void doSecondLittleThing() {

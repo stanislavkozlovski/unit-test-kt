@@ -15,9 +15,12 @@ open class SomethingDoer(private val motivationLevel: Int) {
   }
 
   private fun maybeDoSecondLittleThing() {
-    if (feelingAmbitious()) {
-      doSecondLittleThing()
+    if (!feelingAmbitious()) {
+      println("We're not feeling that motivated today it seems.")
+      return
     }
+
+    doSecondLittleThing()
   }
 
   private fun doSecondLittleThing() {
